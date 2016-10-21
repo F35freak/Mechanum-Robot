@@ -3,13 +3,13 @@ package org.usfirst.frc.team2059.robot.subsystems;
 import org.usfirst.frc.team2059.robot.RobotMap;
 import org.usfirst.frc.team2059.robot.commands.Drive;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.Victor;
+import edu.wpi.first.wpilibj.Spark;
 
 public class DriveBase extends Subsystem {
-	Victor leftMotorFront = new Victor(RobotMap.driveLeftMotorFront);
-	Victor leftMotorBack = new Victor(RobotMap.driveLeftMotorBack);
-	Victor rightMotorFront = new Victor(RobotMap.driveRightMotorFront);
-	Victor rightMotorBack = new Victor(RobotMap.driveRightMotorBack);
+	Spark leftMotorFront = new Spark(RobotMap.driveLeftMotorFront);
+	Spark leftMotorBack = new Spark(RobotMap.driveLeftMotorBack);
+	Spark rightMotorFront = new Spark(RobotMap.driveRightMotorFront);
+	Spark rightMotorBack = new Spark(RobotMap.driveRightMotorBack);
 	 public void initDefaultCommand() {
 		    setDefaultCommand(new Drive());
 		  }
